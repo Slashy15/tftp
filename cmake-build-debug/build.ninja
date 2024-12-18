@@ -55,8 +55,20 @@ build CMakeFiles/tftp.dir/main.c.o: C_COMPILER__tftp_unscanned_Debug /home/alex/
   OBJECT_DIR = CMakeFiles/tftp.dir
   OBJECT_FILE_DIR = CMakeFiles/tftp.dir
 
-build CMakeFiles/tftp.dir/tftp_client.c.o: C_COMPILER__tftp_unscanned_Debug /home/alex/CLionProjects/tftp/tftp_client.c || cmake_object_order_depends_target_tftp
-  DEP_FILE = CMakeFiles/tftp.dir/tftp_client.c.o.d
+build CMakeFiles/tftp.dir/gettftp.c.o: C_COMPILER__tftp_unscanned_Debug /home/alex/CLionProjects/tftp/gettftp.c || cmake_object_order_depends_target_tftp
+  DEP_FILE = CMakeFiles/tftp.dir/gettftp.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/tftp.dir
+  OBJECT_FILE_DIR = CMakeFiles/tftp.dir
+
+build CMakeFiles/tftp.dir/puttftp.c.o: C_COMPILER__tftp_unscanned_Debug /home/alex/CLionProjects/tftp/puttftp.c || cmake_object_order_depends_target_tftp
+  DEP_FILE = CMakeFiles/tftp.dir/puttftp.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/tftp.dir
+  OBJECT_FILE_DIR = CMakeFiles/tftp.dir
+
+build CMakeFiles/tftp.dir/utils.c.o: C_COMPILER__tftp_unscanned_Debug /home/alex/CLionProjects/tftp/utils.c || cmake_object_order_depends_target_tftp
+  DEP_FILE = CMakeFiles/tftp.dir/utils.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/tftp.dir
   OBJECT_FILE_DIR = CMakeFiles/tftp.dir
@@ -69,7 +81,7 @@ build CMakeFiles/tftp.dir/tftp_client.c.o: C_COMPILER__tftp_unscanned_Debug /hom
 #############################################
 # Link the executable tftp
 
-build tftp: C_EXECUTABLE_LINKER__tftp_Debug CMakeFiles/tftp.dir/main.c.o CMakeFiles/tftp.dir/tftp_client.c.o
+build tftp: C_EXECUTABLE_LINKER__tftp_Debug CMakeFiles/tftp.dir/main.c.o CMakeFiles/tftp.dir/gettftp.c.o CMakeFiles/tftp.dir/puttftp.c.o CMakeFiles/tftp.dir/utils.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/tftp.dir
   POST_BUILD = :

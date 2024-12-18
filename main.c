@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "tftp_client.h"
+#include "gettftp.h"
+#include "utils.h"
+#include "puttftp.h"
 
 int main(int argc, char *argv[]) {
     if (argc != 4) {
