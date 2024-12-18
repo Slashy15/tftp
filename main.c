@@ -7,7 +7,7 @@
 
 int main(int argc, char *argv[]) {
     if (argc != 4) {
-        fprintf(stderr, "Please use these command: ./tftp <command> <host> <file>\n");
+        fprintf(stderr, "Please use this command: ./tftp <command> <host> <file>\n");
         return EXIT_FAILURE;
     }
 
